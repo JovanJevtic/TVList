@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  height: 8vh;
+  min-height: 60px;
+  background: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav .logo-wrapp {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+header nav ul {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li .nav-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+}
+
+.header-gap {
+  height: 8vh;
+  min-height: 60px;
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+  background: #fafafa;
+}
+
+.input-form-gap {
+  height: 45px;
+}
+
+.input-form {
+  height: 250px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e3e3e3;
+}
+
+.input-form form {
+  height: 80%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.input-form form label {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.input-form form input {
+  height: 45px;
+  width: 50%;
+  background: #f3f3f3;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 16px;
+}
+
+.input-form form input:focus, .input-form form input:hover {
+  background: #ebeaea;
+}
+/*# sourceMappingURL=style.css.map */
