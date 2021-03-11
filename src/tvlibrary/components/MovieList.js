@@ -1,7 +1,7 @@
-import { useState, useEffect, useContext } from 'react';
+import { useContext } from 'react';
 import { MovieContext } from '../../MovieContext';
 import useFetch from '../hooks/useFetch';
-import Movie from './MovieThumbnail';
+import MovieThumbnail from './MovieThumbnail';
 
 const MovieList = () => {
     
@@ -15,7 +15,7 @@ const MovieList = () => {
             { movies && movies.Error !== "Incorrect IMDb ID." && movies.Error }
             { movies && movies.Search && movies.Search.map(movie => (
                 <div key={movie.imdbID} className="movie-grid" style={{ display: movie.Poster !== "N/A" ? 'flex' : 'none'}}> 
-                    <Movie id={movie.imdbID} poster={movie.Poster} /> 
+                    <MovieThumbnail id={movie.imdbID} poster={movie.Poster} /> 
                 </div>
             )) }
         </div>

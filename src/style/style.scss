@@ -153,3 +153,91 @@ header {
         width: 90%;
     }
 }
+
+.movie-imdb-page {
+    width: 100%;    
+
+    .movie-page-heading {
+        height: 50vh;
+        width: 100%;
+        display: flex;
+
+        .movie-page-poster-container {
+            flex: 1;
+            display: flex;
+
+            .movie-poster-container {
+                flex: 3;
+
+                img {
+                    margin-top: 25px;
+                }
+            }
+
+            .movie-poster-btns-container {
+                flex: 2;
+                display: flex;
+
+                .save-btn {
+                    height: 50px;
+                    width: 200px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: rgb(21, 35, 224);
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    margin-top: 25px;
+                    outline: none;
+                    font-weight: bold;
+                    
+                    i {
+                        padding-left: 10px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .movie-page-info-container {
+            flex: 1;
+            height: 90%;
+
+            .movie-page-info-title {
+               margin-top: 25px; 
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                
+                li {
+                    line-height: 30px;
+                }
+            }
+
+            .movie-page-info-plot-container {
+                height: 35%;
+                background: 100%;
+                display: flex;
+                align-items: flex-end;
+
+                .movie-page-info-plot {
+                        
+                }
+            }
+        }
+    }
+
+    .movie-page-footer {
+        height: 40vh;
+        width: 100%;
+    }
+}
+
+.awards {
+    margin-top: 20px;
+}

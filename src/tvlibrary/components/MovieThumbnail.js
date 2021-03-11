@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Movie = ({id, poster}) => {
+const MovieThumbnail = ({id, poster}) => {
     return(
         <Link to={`/movie/${id}`}>
             <div className="movie">
@@ -11,11 +11,11 @@ const Movie = ({id, poster}) => {
                         backgroundPosition: 'center',
                         backgroundSize: 'cover',
                         backgroundRepeat: 'no-repeat'
-                      }}
+                    }}
                 ></div>
             </div>
         </Link>
     );
 }
 
-export default Movie;
+export default MovieThumbnail;

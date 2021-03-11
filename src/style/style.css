@@ -198,4 +198,117 @@ header nav ul li .nav-link {
   height: 94%;
   width: 90%;
 }
+
+.movie-imdb-page {
+  width: 100%;
+}
+
+.movie-imdb-page .movie-page-heading {
+  height: 50vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-poster-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-poster-container .movie-poster-container {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-poster-container .movie-poster-container img {
+  margin-top: 25px;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-poster-container .movie-poster-btns-container {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-poster-container .movie-poster-btns-container .save-btn {
+  height: 50px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1523e0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 25px;
+  outline: none;
+  font-weight: bold;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-poster-container .movie-poster-btns-container .save-btn i {
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-info-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 90%;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-info-container .movie-page-info-title {
+  margin-top: 25px;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-info-container ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-info-container ul li {
+  line-height: 30px;
+}
+
+.movie-imdb-page .movie-page-heading .movie-page-info-container .movie-page-info-plot-container {
+  height: 35%;
+  background: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.movie-imdb-page .movie-page-footer {
+  height: 40vh;
+  width: 100%;
+}
+
+.awards {
+  margin-top: 20px;
+}
 /*# sourceMappingURL=style.css.map */
