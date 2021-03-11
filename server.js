@@ -21,7 +21,7 @@ app.use(cors({
 }));
 
 //* Routes
-app.use('/', require('./routes/watchlists'));
+app.use('/api/watchlists', require('./routes/watchlists'));
 
 //* Static files serve
 let dirname = path.resolve();
