@@ -87,6 +87,7 @@ header {
         label {
             font-size: 32px;
             font-weight: 400;
+            margin-top: 30px;
         }
 
         input {
@@ -103,5 +104,52 @@ header {
                 background: rgb(235, 234, 234);
             }
         }
+    }
+}
+
+.movie-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.movie-grid:nth-child(2n) {
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.movie-grid:nth-child(3n) {
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.movie-grid:nth-child(1n) {
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.movie {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background: #f3f3f3;
+    border: 1px solid #e3e3e3;
+    width: 350px;
+    transition: .4s;
+
+    &:hover {
+        background: rgb(235, 234, 234);
+    }
+
+    .background {
+        height: 94%;
+        width: 90%;
     }
 }

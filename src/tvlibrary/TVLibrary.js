@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Nav from './components/Nav';
-import ExplorePage from './pages/Explore';
+
+import ExplorePage from './pages/ExplorePage';
+import MoviePage from './pages/MoviePage';
 
 const TVLibrary = () => {
     return(
@@ -10,6 +12,7 @@ const TVLibrary = () => {
             <div className="content">
                 <Switch>
                     <Route path="/" exact component={ExplorePage} />
+                    <Route path="/movie/:id" component={MoviePage} />
                 </Switch>
             </div>
         </Router>
