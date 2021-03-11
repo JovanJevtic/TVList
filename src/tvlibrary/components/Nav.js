@@ -5,13 +5,13 @@ const Nav = () => {
         <header className="header">
             <nav className="container">
                 <div className="logo-wrapp">
-                    <p className="logo">TVLibrary</p>
+                    <Link to="/" className="logo">TVLibrary</Link>
                 </div>
                 <ul className="nav-list">
                     <li><Link className="nav-link" to="/">Explore</Link></li>
-                    <li><Link className="nav-link" to="/">Watchlists</Link></li>
-                    <li><Link className="nav-link" to="/">Login</Link></li>
-                    <li><Link className="nav-link" to="/">Signup</Link></li>
+                    <li><Link className="nav-link" to="/watchlists">Watchlists</Link></li>
+                    <li><Link className="nav-link" to="/login">Login</Link></li>
+                    <li><Link className="nav-link" to="/signup"><div className="nav-btn">Signup</div></Link></li>
                 </ul>
             </nav>  
         </header>

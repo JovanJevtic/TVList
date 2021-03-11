@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Movie = ({
     actors,
     awards, 
@@ -35,9 +37,9 @@ const Movie = ({
                         <img className="movie-poster" src={poster} />
                     </div>
                     <div className="movie-poster-btns-container">
-                        <button className="save-btn">
+                        <Link to="/watchlists" className="save-btn">
                             Add to Watchlist <i class="fas fa-folder-plus"></i>
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="movie-page-info-container">

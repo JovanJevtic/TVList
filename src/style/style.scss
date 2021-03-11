@@ -34,6 +34,11 @@ header {
             align-items: center;
             font-weight: 800;
             font-size: 24px;
+
+            .logo {
+                text-decoration: none;
+                color: #000;
+            }
         }
 
         ul {
@@ -61,7 +66,7 @@ header {
 
 .content {
     width: 100%;
-    min-height: 100vh;
+    min-height: 92vh;
     background: #fafafa;
 }
 
@@ -191,6 +196,7 @@ header {
                     margin-top: 25px;
                     outline: none;
                     font-weight: bold;
+                    text-decoration: none;
                     
                     i {
                         padding-left: 10px;
@@ -220,14 +226,10 @@ header {
             }
 
             .movie-page-info-plot-container {
-                height: 35%;
+                height: 32%;
                 background: 100%;
                 display: flex;
                 align-items: flex-end;
-
-                .movie-page-info-plot {
-                        
-                }
             }
         }
     }
@@ -240,4 +242,23 @@ header {
 
 .awards {
     margin-top: 20px;
+}
+
+.development-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.nav-btn {
+    height: 40px;
+    width: 120px;
+    display: grid;
+    place-items: center;
+    background: rgb(21, 35, 224);
+    color: #fff;
+    font-weight: bold;
 }

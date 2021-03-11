@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 
 import ExplorePage from './pages/ExplorePage';
 import MoviePage from './pages/MoviePage';
+import DevelopmentPage from './pages/DevelopmentPage';
 
 const TVLibrary = () => {
     return(
@@ -13,6 +14,9 @@ const TVLibrary = () => {
                 <Switch>
                     <Route path="/" exact component={ExplorePage} />
                     <Route path="/movie/:id" component={MoviePage} />
+                    <Route path="/watchlists" component={DevelopmentPage} />
+                    <Route path="/login" component={DevelopmentPage} />
+                    <Route path="/signup" component={DevelopmentPage} />
                 </Switch>
             </div>
         </Router>
