@@ -14,7 +14,7 @@ const MovietSchema = new mongoose.Schema({
         required: true
     },
     watchlists: [
-        { type: mongoose.Schema.Types.ObjectId, ref: 'Watchlist', required: true }
+        { type: mongoose.Schema.Types.ObjectId, ref: 'Watchlist', }
     ]
 });
 
