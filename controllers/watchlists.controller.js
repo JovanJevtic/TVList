@@ -51,7 +51,7 @@ const updateWatchlist = async (req, res, next) => {
             const updatedWatchlist = await watchlist.save();
             res.json(updatedWatchlist);
         } catch (err) {
-
+            res.status(500).json({ err: err.msg });
         }
     } else {
         res.status(404).json({ msg: 'Sorry, the wathclist you are looking for does not exist anymore!' });

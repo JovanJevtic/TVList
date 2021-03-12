@@ -13,8 +13,12 @@ const MovietSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    poster: {
+        type: String, 
+        required: true
+    },
     watchlists: [
-        { type: mongoose.Schema.Types.ObjectId, ref: 'Watchlist', }
+        { type: mongoose.Schema.Types.ObjectId, ref: 'Watchlist', required: true }
     ]
 });
 
