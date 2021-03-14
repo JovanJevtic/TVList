@@ -1,13 +1,15 @@
 const Movie = require('../models/Movie');
 
 const getMovie = async (req, res, next) => {
+    let movie;
     try {
-        const movie = Movie.findById(req.params.id);
+        movie = await Movie.findById(req.params.id);
 
         if (!movie) {
             res.status(404).json({ msg: 'Sorry, the movie you are looking for does not exist anymore!' })
         }
 
+        res.movie = movie;
         res.json(res.movie);
     } catch(err) {
         res.status(500).json({ err: err.message });
@@ -40,18 +42,16 @@ const addMovie = async (req, res, next) => {
 }
 
 const updateMovie = async (req, res, next) => {
-    const { title, imdbID, poster, watchlists } = req.body;
+    const { title, watchlists } = req.body;
 
     const movie = Movie.findById(req.params.id);
     if (movie) {
         movie.title = title;
-        movie.imdbID = imdbID;
-        movie.poster = poster;
         movie.watchlists = watchlists;
 
         try {
             const updatedMovie = await movie.save();
-            res.json(updateMovie);
+            res.json(updatedMovie);
         } catch (err) {
             res.status(500).json({ err: err.msg })
         }
