@@ -6,7 +6,7 @@ import Movie from '../components/Movie';
 const MoviePage = () => {
 
     const { id } = useParams();   
-    const { data: movie, isLoading, error } = useFetch(`http://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&i=${id}`);
+    const { data: movie, isLoading, error } = useFetch(`https://www.omdbapi.com/?apikey=${process.env.REACT_APP_API_KEY}&i=${id}`);
 
     useEffect(() => {
         console.log(movie)
