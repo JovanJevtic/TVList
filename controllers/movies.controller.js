@@ -2,7 +2,7 @@ const Movie = require('../models/Movie');
 
 const getMovie = async (req, res, next) => {
     let movie;
-    try {g
+    try {
         movie = await Movie.findById(req.params.id);
 
         if (!movie) {
@@ -44,7 +44,7 @@ const addMovie = async (req, res, next) => {
 const updateMovie = async (req, res, next) => {
     const { title, watchlists } = req.body;
 
-    const movie = Movie.findById(req.params.id);
+    const movie = await Movie.findById(req.params.id);
     if (movie) {
         movie.title = title;
         movie.watchlists = watchlists;
