@@ -34,7 +34,7 @@ const Movie = ({
                             backgroundRepeat: 'no-repeat'
                     }}></div> */}
                     <div className="movie-poster-container">
-                        <img className="movie-poster" src={poster} />
+                        <img alt="poster" className="movie-poster" src={poster} />
                     </div>
                     <div className="movie-poster-btns-container">
                         <Link to="/watchlists" className="save-btn">

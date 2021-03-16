@@ -15,9 +15,9 @@ const db = mongoose.connection;
 app.use(express.json());
 
 //* Cors enabled
-const allowedOrigins = ['http://localhost:3000/'];
+//const allowedOrigins = ['http://localhost:3000/'];
 app.use(cors({
-    origin: allowedOrigins
+    origin: 'http://localhost:3000'
 }));
 
 //* Routes

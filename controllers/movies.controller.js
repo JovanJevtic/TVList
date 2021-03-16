@@ -16,7 +16,7 @@ const getMovie = async (req, res, next) => {
     }
 }
 
-const getAllMovies = async (req, res, next) => {
+const getAllMovies = async (req, res, next) => {    
     try {
         const movies = await Movie.find();
         res.json(movies);

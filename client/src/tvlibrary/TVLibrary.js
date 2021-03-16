@@ -3,6 +3,7 @@ import Nav from './components/Nav';
 
 import ExplorePage from './pages/ExplorePage';
 import MoviePage from './pages/MoviePage';
+import WatchlistsPage from './pages/WatchlistsPage';
 import DevelopmentPage from './pages/DevelopmentPage';
 
 const TVLibrary = () => {
@@ -14,7 +15,7 @@ const TVLibrary = () => {
                 <Switch>
                     <Route path="/" exact component={ExplorePage} />
                     <Route path="/movie/:id" component={MoviePage} />
-                    <Route path="/watchlists" component={DevelopmentPage} />
+                    <Route path="/watchlists" component={WatchlistsPage} />
                     <Route path="/login" component={DevelopmentPage} />
                     <Route path="/signup" component={DevelopmentPage} />
                 </Switch>

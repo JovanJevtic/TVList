@@ -262,3 +262,16 @@ header {
     color: #fff;
     font-weight: bold;
 }
+
+.wathclists-page {
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.watchlist-thumbnail {
+    height: 140px;
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
