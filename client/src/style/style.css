@@ -362,5 +362,8 @@ header nav ul li .nav-link {
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
+  background: #fff;
+  -webkit-box-shadow: 3px 5px 5px #fafafa;
+          box-shadow: 3px 5px 5px #fafafa;
 }
 /*# sourceMappingURL=style.css.map */

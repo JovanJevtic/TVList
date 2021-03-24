@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
 const MovieThumbnail = ({id, poster}) => {
+
+    console.log(id)
     return(
         <Link to={`/movie/${id}`}>
             <div className="movie">

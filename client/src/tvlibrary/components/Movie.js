@@ -26,19 +26,12 @@ const Movie = ({
         <div className="movie-imdb-page">
             <div className="movie-page-heading">
                 <div className="movie-page-poster-container">
-                    {/* <div className="movie-page-poster"
-                        style={{  
-                            backgroundImage: `url(${poster})`,
-                            backgroundPosition: 'center',
-                            backgroundSize: 'cover',
-                            backgroundRepeat: 'no-repeat'
-                    }}></div> */}
                     <div className="movie-poster-container">
                         <img alt="poster" className="movie-poster" src={poster} />
                     </div>
                     <div className="movie-poster-btns-container">
                         <Link to="/watchlists" className="save-btn">
-                            Add to Watchlist <i class="fas fa-folder-plus"></i>
+                            Add to Watchlist <i className="fas fa-folder-plus"></i>
                         </Link>
                     </div>
                 </div>
