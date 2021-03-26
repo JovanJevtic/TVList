@@ -11,14 +11,15 @@ const MovietSchema = new mongoose.Schema({
     },
     imdbID: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     poster: {
         type: String, 
         required: true
     },
     watchlists: [
-        { type: mongoose.Schema.Types.ObjectId, ref: 'Watchlist', required: true, unique: true }
+        { type: mongoose.Schema.Types.ObjectId, ref: 'Watchlist', unique: false }
     ]
 });
 

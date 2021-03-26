@@ -10,7 +10,7 @@ const WatchlistSchema = new mongoose.Schema({
         default: Date.now
     },
     movies: [
-        { type: mongoose.Schema.Types.ObjectId, ref: 'Movie', required: true, unique: true } 
+        { type: mongoose.Schema.Types.ObjectId, ref: 'Movie', required: true, unique: false } 
     ]
 });
 

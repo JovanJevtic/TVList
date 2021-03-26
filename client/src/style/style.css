@@ -80,8 +80,8 @@ header nav ul li .nav-link {
 
 .content {
   width: 100%;
-  min-height: 92vh;
   background: #fafafa;
+  min-height: 92vh;
 }
 
 .input-form-gap {
@@ -345,7 +345,7 @@ header nav ul li .nav-link {
 }
 
 .wathclists-page {
-  height: 92vh;
+  min-height: 92vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -355,15 +355,83 @@ header nav ul li .nav-link {
           flex-direction: column;
 }
 
-.watchlist-thumbnail {
-  height: 140px;
+.watchlist-thumbnail-container {
+  height: 270px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 10px 5px 5px #f3f3f3;
+          box-shadow: 10px 5px 5px #f3f3f3;
+  margin-bottom: 40px;
+}
+
+.watchlist-thumbnail-container .watchlist-thumbnail-header {
+  height: 70px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.watchlist-thumbnail-container .watchlist-thumbnail-header .watchlist-thumbnail-header-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.watchlist-thumbnail-container .watchlist-thumbnail-header .watchlist-thumbnail-header-title p {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.watchlist-thumbnail-container .watchlist-thumbnail-header .watchlist-thumbnail-header-date {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.watchlist-thumbnail-container .watchlist-thumbnail-header .watchlist-thumbnail-header-date p {
+  font-size: 16px;
+}
+
+.watchlist-thumbnail-container .watchlist-thumbnail {
+  height: 200px;
+  width: 100%;
   background: #fff;
-  -webkit-box-shadow: 3px 5px 5px #fafafa;
-          box-shadow: 3px 5px 5px #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.watchlist-preview {
+  height: 200px;
+}
+
+.watchlist-preview img {
+  height: 200px;
 }
 /*# sourceMappingURL=style.css.map */

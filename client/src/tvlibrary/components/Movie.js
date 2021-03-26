@@ -19,9 +19,7 @@ const Movie = ({
     title,
     boxOffice
 }) => {
-
-    console.log(ratings)
-
+    
     return(
         <div className="movie-imdb-page">
             <div className="movie-page-heading">

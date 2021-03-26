@@ -6,8 +6,6 @@ const CreateWatchlist = () => {
     const [ title, setTitle ] = useState('');
 
     const onFormSubmit = async (e) => {
-        e.preventDefault();
-
         const response = await axios({
             method: 'POST',
             url: 'http://localhost:5000/api/watchlists',
@@ -15,11 +13,9 @@ const CreateWatchlist = () => {
                 'Content-Type': 'application/json'
             },
             data: {
-                title: title
+                title: title,
             }
         });
-        
-        console.log(response)
     }
 
     return(
