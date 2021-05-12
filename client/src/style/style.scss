@@ -227,9 +227,13 @@ header {
 
             .movie-page-info-plot-container {
                 height: 32%;
-                background: 100%;
                 display: flex;
                 align-items: center;
+
+                p {
+                    background: #f3f3f3;
+                    padding: 7px;
+                }
             }
         }
     }
